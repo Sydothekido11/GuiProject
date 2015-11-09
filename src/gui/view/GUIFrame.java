@@ -24,11 +24,15 @@ public class GUIFrame extends JFrame
 		
 	}
 	
+	/**
+	 * Helper method to setup the Frame and its structure.
+	 */
 	private void setupFrame()
 	{
-		this.setContentPane(basePanel);	//Sets the panel in the GUIFrame, this is required!
-		this.setResizable(false);		//Usually a good idea but not required.
-		this.setSize(400,400);			//Sets the size.
-		this.setVisible(true);			//Must be the last line of code in the setupFrame method.
+		this.setContentPane(basePanel);		   //Sets the panel in the GUIFrame, this is required!
+		this.setResizable(false);			   //Usually a good idea but not required.
+		this.setTitle("My window app breh."); //Sets the title.
+		this.setSize(400,400);				  //Sets the size.
+		this.setVisible(true);				  //Must be the last line of code in the setupFrame method.
 	}
 }
