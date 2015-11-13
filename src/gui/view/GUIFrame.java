@@ -35,4 +35,9 @@ public class GUIFrame extends JFrame
 		this.setSize(400,400);				  //Sets the size.
 		this.setVisible(true);				  //Must be the last line of code in the setupFrame method.
 	}
+	
+	public GuiController getBaseController()
+	{
+		return baseController;
+	}
 }
