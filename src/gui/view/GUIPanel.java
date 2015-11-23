@@ -8,8 +8,9 @@ import javax.swing.SpringLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.awt.Color;
+
 
 /**
  * 
@@ -74,12 +75,12 @@ public class GUIPanel extends JPanel
 		{
 			public void mouseClicked(MouseEvent clicked)
 			{
-				changeRandomColor();
+			//	changeRandomColor();
 			}
 			
 			public void mouseReleased(MouseEvent released)
 			{
-				
+				changeRandomColor();
 			}
 			
 			public void mousePressed(MouseEvent pressed)
@@ -97,6 +98,20 @@ public class GUIPanel extends JPanel
 			//	changeRandomColor();
 			}
 		});
+
+		this.addMouseMotionListener(new MouseMotionListener()
+		{
+			public void mouseMoved(MouseEvent moved)
+			{
+				
+			}
+			
+			public void mouseDragged(MouseEvent dragged)
+			{
+				
+			}
+		});
+		
 	}
 	
 	private void changeRandomColor()
