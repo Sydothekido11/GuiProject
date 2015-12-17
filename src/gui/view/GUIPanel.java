@@ -124,7 +124,7 @@ public class GUIPanel extends JPanel
 			{
 				if(dragged.isAltDown())
 				{
-					firstTextField.setText("you held alt and dragge. beeeehl.");
+					firstTextField.setText("you held alt and dragged.");
 				}
 			}
 		});
